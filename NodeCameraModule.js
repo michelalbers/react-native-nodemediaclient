@@ -104,7 +104,7 @@ NodeCameraView.propTypes = {
   denoise: PropTypes.bool,
   smoothSkinLevel: PropTypes.oneOf([0, 1, 2, 3, 4, 5]),
   onStatus: PropTypes.func,
-  ...View.propTypes // 包含默认的View的属性
+  ...ViewPropTypes // 包含默认的View的属性
 };
 
 const RCTNodeCamera = requireNativeComponent('RCTNodeCamera', NodeCameraView, {
